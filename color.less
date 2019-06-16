@@ -2170,7 +2170,7 @@ body {
   color: @primary-color;
 }
 #_hj_feedback_container .path1::before {
-  color: @primary-color !important;
+  color: #1890ff !important;
 }
 #_hj_feedback_container .path2::before {
   color: #fff !important;
@@ -3286,7 +3286,7 @@ ul.anticons-list li::after {
   background: @primary-color;
 }
 #nprogress .peg {
-  box-shadow: 0 0 10px @primary-color, 0 0 5px @primary-color;
+  box-shadow: 0 0 10px #1890ff, 0 0 5px @primary-color;
 }
 #nprogress .spinner-icon {
   border-top-color: @primary-color;
@@ -4779,7 +4779,7 @@ html {
 }
 .ant-fullcalendar-today .ant-fullcalendar-value,
 .ant-fullcalendar-month-panel-current-cell .ant-fullcalendar-value {
-  box-shadow: 0 0 0 1px @primary-color inset;
+  box-shadow: 0 0 0 1px #1890ff inset;
 }
 .ant-fullcalendar-selected-day .ant-fullcalendar-value,
 .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value {
@@ -5854,7 +5854,9 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 }
 .ant-divider-dashed {
   background: none;
-  border-top: 1px dashed #e8e8e8;
+  border-color: #e8e8e8;
+  border-style: dashed;
+  border-width: 1px 0 0;
 }
 .ant-divider-horizontal.ant-divider-with-text-center.ant-divider-dashed,
 .ant-divider-horizontal.ant-divider-with-text-left.ant-divider-dashed,
@@ -5868,6 +5870,9 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 .ant-divider-horizontal.ant-divider-with-text-left.ant-divider-dashed::after,
 .ant-divider-horizontal.ant-divider-with-text-right.ant-divider-dashed::after {
   border-style: dashed none none;
+}
+.ant-divider-vertical.ant-divider-dashed {
+  border-width: 0 0 0 1px;
 }
 .ant-drawer-left.ant-drawer-open .ant-drawer-content-wrapper {
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
@@ -6936,7 +6941,7 @@ form .ant-upload {
 .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
 .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
 .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before {
-  background: linear-gradient(to right, @primary-color, @primary-color);
+  background: linear-gradient(to right, #1890ff, #1890ff);
 }
 .ant-menu-vertical .ant-menu-submenu-selected,
 .ant-menu-vertical-left .ant-menu-submenu-selected,
@@ -7628,7 +7633,7 @@ form .ant-upload {
   box-shadow: -1px 0 0 0 @primary-color;
 }
 .ant-radio-button-wrapper-checked::before {
-  background-color: @primary-color !important;
+  background-color: #1890ff !important;
 }
 .ant-radio-button-wrapper-checked:first-child {
   border-color: @primary-color;
@@ -8372,13 +8377,21 @@ tr.ant-table-expanded-row:hover {
   background: #fff;
 }
 .ant-table-fixed-header .ant-table-scroll .ant-table-header::-webkit-scrollbar {
-  border-bottom: 1px solid #e8e8e8;
+  border: 1px solid #e8e8e8;
+  border-width: 0 0 1px 0;
 }
 .ant-table-hide-scrollbar {
   scrollbar-color: transparent transparent;
 }
 .ant-table-hide-scrollbar::-webkit-scrollbar {
   background-color: transparent;
+}
+.ant-table-bordered.ant-table-fixed-header .ant-table-scroll .ant-table-header::-webkit-scrollbar {
+  border: 1px solid #e8e8e8;
+  border-width: 1px 1px 1px 0;
+}
+.ant-table-bordered.ant-table-fixed-header .ant-table-scroll .ant-table-header.ant-table-hide-scrollbar .ant-table-thead > tr > th:last-child {
+  border-right-color: transparent;
 }
 .ant-table-fixed-left,
 .ant-table-fixed-right {
@@ -9491,7 +9504,7 @@ body {
   color: @primary-color;
 }
 #_hj_feedback_container .path1::before {
-  color: @primary-color !important;
+  color: #1890ff !important;
 }
 #_hj_feedback_container .path2::before {
   color: #fff !important;
@@ -10607,7 +10620,7 @@ ul.anticons-list li::after {
   background: @primary-color;
 }
 #nprogress .peg {
-  box-shadow: 0 0 10px @primary-color, 0 0 5px @primary-color;
+  box-shadow: 0 0 10px #1890ff, 0 0 5px @primary-color;
 }
 #nprogress .spinner-icon {
   border-top-color: @primary-color;
