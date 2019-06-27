@@ -5814,25 +5814,25 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 .ant-descriptions-item-content {
   color: rgba(0, 0, 0, 0.65);
 }
-.ant-descriptions.bordered .ant-descriptions-view {
+.ant-descriptions-bordered .ant-descriptions-view {
   border: 1px solid #e8e8e8;
 }
-.ant-descriptions.bordered .ant-descriptions-item-label,
-.ant-descriptions.bordered .ant-descriptions-item-content {
+.ant-descriptions-bordered .ant-descriptions-item-label,
+.ant-descriptions-bordered .ant-descriptions-item-content {
   border-right: 1px solid #e8e8e8;
 }
-.ant-descriptions.bordered .ant-descriptions-item-label:last-child,
-.ant-descriptions.bordered .ant-descriptions-item-content:last-child {
+.ant-descriptions-bordered .ant-descriptions-item-label:last-child,
+.ant-descriptions-bordered .ant-descriptions-item-content:last-child {
   border-right: none;
 }
-.ant-descriptions.bordered .ant-descriptions-row {
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: #fafafa;
+}
+.ant-descriptions-bordered .ant-descriptions-row {
   border-bottom: 1px solid #e8e8e8;
 }
-.ant-descriptions.bordered .ant-descriptions-row:last-child {
+.ant-descriptions-bordered .ant-descriptions-row:last-child {
   border-bottom: none;
-}
-.ant-descriptions.bordered .ant-descriptions-item-label {
-  background-color: #fafafa;
 }
 .ant-divider {
   color: rgba(0, 0, 0, 0.65);
@@ -6030,20 +6030,6 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 }
 form .ant-upload {
   background: transparent;
-}
-.ant-input-group-wrap .ant-select-selection {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.ant-input-group-wrap .ant-select-selection:hover {
-  border-color: #d9d9d9;
-}
-.ant-input-group-wrap .ant-select-selection--single {
-  background-color: rgba(0, 0, 0, 0.07);
-}
-.ant-input-group-wrap .ant-select-open .ant-select-selection {
-  border-color: #d9d9d9;
-  box-shadow: none;
 }
 .has-success.has-feedback .ant-form-item-children-icon {
   color: #52c41a;
@@ -6800,6 +6786,15 @@ form .ant-upload {
 }
 .ant-mentions > textarea {
   border: none;
+}
+.ant-mentions > textarea::-moz-placeholder {
+  color: #bfbfbf;
+}
+.ant-mentions > textarea:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+.ant-mentions > textarea::-webkit-input-placeholder {
+  color: #bfbfbf;
 }
 .ant-mentions-measure {
   color: transparent;
@@ -8952,32 +8947,45 @@ li.ant-time-picker-panel-select-option-disabled:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 .ant-tooltip-arrow {
-  border-color: transparent;
+  background: transparent;
   border-style: solid;
+  border-width: 3.53553391px;
 }
 .ant-tooltip-placement-top .ant-tooltip-arrow,
 .ant-tooltip-placement-topLeft .ant-tooltip-arrow,
 .ant-tooltip-placement-topRight .ant-tooltip-arrow {
-  border-width: 5px 5px 0;
-  border-top-color: rgba(0, 0, 0, 0.75);
+  border-top-color: transparent;
+  border-right-color: #404040;
+  border-bottom-color: #404040;
+  border-left-color: transparent;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-tooltip-placement-right .ant-tooltip-arrow,
 .ant-tooltip-placement-rightTop .ant-tooltip-arrow,
 .ant-tooltip-placement-rightBottom .ant-tooltip-arrow {
-  border-width: 5px 5px 5px 0;
-  border-right-color: rgba(0, 0, 0, 0.75);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #404040;
+  border-left-color: #404040;
+  box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-tooltip-placement-left .ant-tooltip-arrow,
 .ant-tooltip-placement-leftTop .ant-tooltip-arrow,
 .ant-tooltip-placement-leftBottom .ant-tooltip-arrow {
-  border-width: 5px 0 5px 5px;
-  border-left-color: rgba(0, 0, 0, 0.75);
+  border-top-color: #404040;
+  border-right-color: #404040;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  box-shadow: 3px -3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-tooltip-placement-bottom .ant-tooltip-arrow,
 .ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,
 .ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
-  border-width: 0 5px 5px;
-  border-bottom-color: rgba(0, 0, 0, 0.75);
+  border-top-color: #404040;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #404040;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);
 }
 .ant-transfer-customize-list .ant-table-wrapper .ant-table-small {
   border: 0;
