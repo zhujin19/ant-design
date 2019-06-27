@@ -96,9 +96,11 @@ const renderCol = (child: React.ReactElement<DescriptionsItemProps>, bordered: b
   }
   return (
     <td colSpan={span} className={classNames(`${prefixCls}-item`, className)}>
-      <span className={`${prefixCls}-item-label`} key="label">
-        {label}
-      </span>
+      {label !== undefined && (
+        <span className={`${prefixCls}-item-label`} key="label">
+          {label}
+        </span>
+      )}
       <span className={`${prefixCls}-item-content`} key="content">
         {children}
       </span>

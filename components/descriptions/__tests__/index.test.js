@@ -135,4 +135,13 @@ describe('Descriptions', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('Descriptions.Item remove colon when label prop is undefined', () => {
+    const wrapper = mount(
+      <Descriptions>
+        <Descriptions.Item>Cloud Database</Descriptions.Item>
+      </Descriptions>,
+    );
+    expect(wrapper.find('.ant-descriptions-item-label').length).toBe(0);
+  });
 });
