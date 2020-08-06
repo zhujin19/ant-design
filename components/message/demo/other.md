@@ -17,7 +17,7 @@ Messages of success, error and warning types.
 import { message, Button, Space } from 'antd';
 
 const success = () => {
-  message.success('This is a success message');
+  message.success('复制成功');
 };
 
 const error = () => {
